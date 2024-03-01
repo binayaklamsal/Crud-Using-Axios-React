@@ -1,0 +1,43 @@
+table {
+  @apply w-full mt-6;
+}
+
+table th {
+  @apply text-gray-700 bg-gray-200;
+}
+
+table th,
+table td {
+  @apply py-1  px-2 border border-gray-400 text-center;
+}
+
+
+.productInput input {
+  @apply border !border-gray-300 bg-slate-400 !px-4 !py-2 rounded-md shadow outline-none;
+}
+
+.productInput {
+  @apply flex flex-col space-y-2;
+}
+
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner .8s ease infinite;
+}
